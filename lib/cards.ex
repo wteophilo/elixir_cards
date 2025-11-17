@@ -7,7 +7,7 @@ defmodule Cards do
     Returns a list of strings representing a deck of playing cards
   """
   def create_deck do
-    values = ["Ace","Two","Three", "Four", "Five"]
+    values = ["Ace", "Two", "Three", "Four", "Five"]
     suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
     for suit <- suits, value <- values do
       "#{value} of #{suit}"
@@ -28,7 +28,7 @@ defmodule Cards do
         true
   """
   def contains?(deck, card) do
-    Enum.member?(deck,card)
+    Enum.member?(deck, card)
   end
 
   @doc """
